@@ -1,7 +1,7 @@
 varman
 ======
 
-Varman is a script to generate global variables (in json file) used by [postman](https://www.getpostman.com/) or [newman](https://github.com/postmanlab://github.com/postmanlabs/newman) from yaml file.
+Varman is a script to generate global variables (in json file) used by [postman](https://www.getpostman.com/) or [newman](https://github.com/postmanlab://github.com/postmanlabs/newman) from yaml file. Using YMAL format to maintain global variables is easier and human-friendly. Sometime, it's also efficient to quickly change variables before execution without messing up json format.
 
 ## How to use?
 
@@ -23,6 +23,12 @@ Generate `test.json` from `input.yaml`:
 
 ```
 ~$ ./varman.sh -i test/input.yaml -o test.json
+```
+
+Use generate `test.json` in newman execution:
+
+```
+~$ newman run <collection.json> -g test.json --export-globals test.json
 ```
 
 ## Where can I get yaml file?
