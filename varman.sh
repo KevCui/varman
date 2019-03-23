@@ -111,7 +111,7 @@ convert_var_to_json() {
     done
 
     string=${string::-1}'
-  ],
+  ]
 }'
     echo "$string" > "$_OUTPUT_FILE"
 }
