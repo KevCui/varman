@@ -1,0 +1,10 @@
+# this is sample yaml
+
+# some smaples
+SAMPLE_NUM: 1
+SAMPLE_PATH: https://example.com
+
+# user info
+SAMPLE_EMAIL: tester@test.com
+SAMPLE_PASSWORD: 123456
+SAMPLE_USERNAME: user
