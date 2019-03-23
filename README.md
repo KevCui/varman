@@ -31,7 +31,7 @@ Use generated `test.json` in newman execution:
 ~$ newman run <collection.json> -g test.json --export-globals test.json
 ```
 
-## Where can I get yaml file?
+## How can I initialize yaml file?
 
 ### 1. Write yaml file from scratch
 
