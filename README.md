@@ -30,7 +30,7 @@ Generate `test.json` from `input.yaml`:
 ### Generate yaml file from existing postman collection
 
 ```
-cat <collection.json> | grep -oh "{{\w*}}"  | sort | uniq | sed -e 's/{{//;s/}}/: ""/'g > <output>.yaml
+cat <collection.json> | grep -oh "{{\w*}}" | sort | uniq | sed -e 's/{{//;s/}}/: ""/'g > <output>.yaml
 ```
 
 ### Generate yaml file from existing postman global/environment json
