@@ -25,7 +25,7 @@ Generate `test.json` from `input.yaml`:
 ~$ ./varman.sh -i test/input.yaml -o test.json
 ```
 
-Use generate `test.json` in newman execution:
+Use generated `test.json` in newman execution:
 
 ```
 ~$ newman run <collection.json> -g test.json --export-globals test.json
