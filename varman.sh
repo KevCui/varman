@@ -6,7 +6,7 @@
 #/   ./varman.sh -i <input.yaml> -o <output.json>
 #/
 #/ Options
-#/   -i:            Input json file
+#/   -i:            Input yaml file
 #/   -o:            Output json file
 #/   -h --help:     Display this help message
 
