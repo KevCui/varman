@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-
+#
 # This script generates postman/newman global variables json from yaml file
-
+#
 #/ Usage:
 #/   ./varman.sh -i <input.yaml> -o <output.json>
 #/
