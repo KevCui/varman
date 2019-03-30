@@ -2,7 +2,7 @@
 
 # some smaples
 SAMPLE_NUM: 1
-SAMPLE_PATH: https://example.com
+SAMPLE_URL: https://example.com
 
 # user info
 SAMPLE_EMAIL: tester@test.com
