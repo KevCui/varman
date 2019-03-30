@@ -70,7 +70,7 @@ check_args() {
     fi
 }
 
-convert_ymal_to_var() {
+convert_yaml_to_var() {
     # Declare variables from ymal file
     while IFS= read -r line; do
         eval "$line"
@@ -119,8 +119,10 @@ convert_var_to_json() {
 main() {
     get_args "$@"
     set_var
-    convert_ymal_to_var
+    convert_yaml_to_var
     convert_var_to_json
 }
 
-main "$@"
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    main "$@"
+fi
