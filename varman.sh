@@ -71,7 +71,7 @@ check_args() {
 }
 
 convert_yaml_to_var() {
-    # Declare variables from ymal file
+    # Declare variables from yaml file
     while IFS= read -r line; do
         eval "$line"
     done < <(sed \
