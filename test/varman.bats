@@ -4,6 +4,8 @@
 #   ~$ bats test/varman.bats
 #
 
+BATS_TEST_SKIPPED=
+
 setup() {
     _SCRIPT="varman.sh"
     _TEST_YAML="test/input.yaml"

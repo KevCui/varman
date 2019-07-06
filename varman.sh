@@ -10,10 +10,12 @@
 #/   -o:            Output json file
 #/   -h --help:     Display this help message
 
+set -e
+set -u
+
 usage() {
     # Display usage message
-    grep '^#/' "$0" | cut -c4-
-    exit 0
+    printf "%b\n" "$(grep '^#/' "$0" | cut -c4-)" && exit 0
 }
 
 set_var() {
@@ -58,12 +60,12 @@ check_file() {
 
 check_args() {
     # Check input and output file names
-    if [[ -z "$_INPUT_FILE" ]]; then
+    if [[ -z "${_INPUT_FILE:-}" ]]; then
         echo "Input file is not set!"
         usage
         exit 1
     fi
-    if [[ -z "$_OUTPUT_FILE" ]]; then
+    if [[ -z "${_OUTPUT_FILE:-}" ]]; then
         echo "Output file is not set!"
         usage
         exit 1
