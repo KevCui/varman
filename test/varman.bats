@@ -91,6 +91,7 @@ setup() {
     [ "$test_SAMPLE_EMAIL" = "tester@test.com" ]
     [ "$test_SAMPLE_USERNAME" = "user" ]
     [ "$test_SAMPLE_PASSWORD" = "123456" ]
+    [ "$test_test1" = "test1" ]
 }
 
 @test "CHECK: convert_var_to_json()" {

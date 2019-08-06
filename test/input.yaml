@@ -3,6 +3,7 @@
 # some smaples
 SAMPLE_NUM: 1
 SAMPLE_URL: https://example.com
+test1: test1
 
 # user info
 SAMPLE_EMAIL: tester@test.com

@@ -79,7 +79,6 @@ convert_yaml_to_var() {
     done < <(sed \
     -e '/^\s*$/d' \
     -e '/^#/d' \
-    -e 's/^[ \t]*//' \
     -e 's/[[:space:]]*$//' \
     -e '/:$/d' \
     -e "s/:[^:\/\/]/='/g" \
